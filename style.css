@@ -1,0 +1,1212 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url("https://occ.a.nflxso.net/genc/hawkins/5.2.0/font/netflix-sans-core-variable-full.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NetflixSans';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#page1 {
+    width: 100%;
+    height: auto;
+    background-image:
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/c95abc7a-8124-4630-bb7a-3b160bdc6de3/web/IN-en-20250915-TRIFECTA-perspective_d3d87aa7-58ed-4c6b-98dc-231ed05ba675_large.jpg");
+    background-position: center -40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000% 8%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 91.67%, rgba(0, 0, 0, 0.884) 95.33%, rgba(0, 0, 0, 0.925) 100.0%);
+}
+
+#nav {
+    width: 100%;
+    height: 5.5rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 22.125rem;
+}
+
+#right {
+    position: relative;
+}
+
+#signIn {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    height: 32px;
+    color: white;
+    width: 76.91px;
+    border-radius: 4px;
+    margin-right: 2px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#signIn:hover {
+    background-color: rgb(185, 19, 31);
+}
+
+#select {
+    background: transparent;
+    color: white;
+    height: 31px;
+    width: 125px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+#select option {
+    color: black;
+}
+
+#lang {
+    position: absolute;
+    fill: white;
+    height: 16px;
+    top: 9px;
+    left: 8px;
+    pointer-events: none;
+}
+
+#logo {
+    color: rgb(229, 9, 20);
+    fill: rgb(229, 9, 20);
+    width: 9.25rem;
+    height: 2.5rem;
+
+}
+
+#content {
+    width: 100%;
+    height: 45rem;
+    margin-top: 5.5rem;
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainh1 {
+
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 125%;
+    width: 41.5rem;
+}
+
+#mainh2 {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+#mainh3 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#emailDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 1rem;
+    width: 41.5rem;
+
+}
+
+#email {
+    height: 3.5rem;
+    width: 442.75px;
+    background-color: transparent;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+#email:focus {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0), 0 0 0 4px #ffffff;
+}
+
+.label {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 2rem;
+    transition: 0.2s ease all;
+}
+
+.float {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    line-height: 1.5;
+    font-size: 13px;
+    left: 1rem;
+    top: 1.5rem;
+}
+
+.floatMobile {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    line-height: 1.5;
+    font-size: 9px;
+    left: 1rem;
+    top: 0rem;
+}
+
+#getStartedDiv {
+    position: relative;
+    background-color: transparent;
+
+
+}
+
+#getStarted {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    width: 213.25px;
+    color: white;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    height: 56px;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+#invalid{
+    color : rgb(235, 57, 66);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    fill: currentcolor;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    display: none;
+}
+
+#cross{
+    position: absolute;
+    left: 0rem;
+    top: 0px;
+}
+
+#arrow {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+    right: 1.5rem;
+    top: 1rem;
+}
+
+#curveDiv {
+    position: relative;
+}
+
+#curve {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    z-index: 2;
+}
+
+#curve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4px;
+    left: 0;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    z-index: 2;
+}
+
+#page2 {
+    width: 100%;
+    height: auto;
+}
+
+#infoSection {
+    padding: 0 22.125rem;
+    width: 100%;
+    height: 100%;
+    margin-top: -2rem;
+    background-color: black;
+}
+
+#trendingSection {
+    width: 100%;
+    height: 23.85rem;
+    margin-bottom: 4rem;
+}
+
+#trendingNow {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+#movieList {
+    height: 19.85rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+#trendingMovies {
+    width: 161.25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.movieDiv {
+    height: 100%;
+    width: 16.125rem;
+    padding: 0.55rem 1.375rem;
+    position: relative;
+
+}
+
+.movie {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.number {
+    height: 1em;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    font-weight: 700;
+    color: black;
+    text-shadow:
+        -2px -2px 0 rgb(232, 232, 232),
+        2px -2px 0 rgb(232, 232, 232),
+        -2px 2px 0 rgb(232, 232, 232),
+        2px 2px 0 rgb(232, 232, 232);
+    font-size: 7.5rem;
+}
+
+#featureSection {
+    width: 100%;
+    height: 24.75rem;
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+}
+
+#reasonToJoin {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+#features {
+    width: 100%;
+    height: 21rem;
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.featureDiv {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.featureh2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 2rem 1.5rem 0rem;
+}
+
+.featureP {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.featureIcon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#faqSection {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+#faq {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
+
+.faqButton {
+    width: 100%;
+    height: 5.25rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
+
+.faqPlus {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+/* #emailSection {
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 4rem;
+    padding: 0;
+}
+
+#secondh3 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#emailDiv2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#emailWrapper {
+    width: 561.75px;
+    height: auto;
+    position: relative;
+}
+
+#email2 {
+    height: 3.5rem;
+    width: 100%;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.075);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+#email2:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.label2 {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 16px;
+    transition: 0.2s ease all;
+
+}
+
+.float2 {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    font-size: 13px;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 10px;
+}
+
+.float2Mobile {
+    position: absolute;
+    color: #b8b6b6;
+    pointer-events: none;
+    font-size: 10px;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 10px;
+}
+
+#getStartedDiv2 {
+    position: relative;
+    background-color: transparent;
+
+
+}
+
+#getStarted2 {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    width: 213.25px;
+    color: white;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    height: 56px;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+#arrow2 {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+    right: 1.5rem;
+    top: 1rem;
+} */
+
+#footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 6rem;
+}
+
+#call {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 3px;
+}
+
+#mobileNumber {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#mobileNumber:visited {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#linkSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 2rem;
+    margin-left: -0.75rem;
+    margin-bottom: 4.5rem;
+    height: auto;
+    padding: 0.25rem;
+}
+
+.linkDiv {
+
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.links {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+.links:visited {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#langWrapper {
+    position: relative;
+    margin-bottom: 2.25rem;
+}
+
+#select2 {
+    background: transparent;
+    color: white;
+    height: 31px;
+    width: 125px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+#select2 option {
+    color: black;
+}
+
+#lang2 {
+    position: absolute;
+    fill: white;
+    height: 16px;
+    top: 9px;
+    left: 8px;
+    pointer-events: none;
+}
+
+#description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+}
+
+@media (max-width:599px) {
+    #page1 {
+        height: auto;
+    }
+
+    #nav {
+        height: 80px;
+        padding: 0px 1.5rem;
+    }
+
+    #logo {
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+    #content {
+        height: 31rem;
+        margin-top: -2rem;
+    }
+
+    #mainh1 {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+
+    #mainh2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    #mainh3 {
+        font-size: 1rem;
+        width: 100%;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    #emailDiv {
+        flex-direction: column;
+        width: 100%;
+    }
+    #form{
+        width: 100%;
+    }
+    #label {
+        top: 1.75rem;
+    }
+
+    #email {
+        width: 100%;
+        height: 3rem;
+        font-size: 12px;
+        line-height: 1.5;
+        padding-top: 1.25rem;
+        padding-right: 1rem;
+        padding-bottom: 0.25rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #getStarted {
+        width: 160.94px;
+        font-size: 1.125rem;
+        height: 3rem;
+    }
+
+    #arrow {
+        top: 0.75rem;
+        right: 1rem;
+    }
+
+    #curveDiv {
+        overflow: hidden;
+    }
+
+    #curve {
+        width: 200%;
+        background-position: center;
+        background: radial-gradient(50% 500% at 25% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+
+    }
+
+    #infoSection {
+        margin-top: -3rem;
+        padding: 0 1.5rem;
+    }
+
+    #trendingNow {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    #trendingSection {
+        height: auto;
+        margin-bottom: 3.5rem;
+    }
+
+    #movieList {
+        margin-top: 0.75rem;
+        height: 10.4rem;
+    }
+
+    #trendingMovies {
+        width: 82.5rem;
+    }
+
+    .movieDiv {
+        width: 8.25rem;
+        padding: 0.3rem 0.625rem;
+    }
+
+    .number {
+        font-size: 4rem;
+        bottom: 1rem;
+    }
+
+    #featureSection {
+        height: auto;
+        margin-bottom: 3.5rem;
+    }
+
+    #reasonToJoin {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    .featureDiv {
+        height: auto;
+
+    }
+
+    .featureh2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 1.5rem 1rem 0rem;
+    }
+
+    .featureP {
+        padding: 0.5rem 1rem 5rem;
+    }
+
+    .featureIcon {
+        height: 4rem;
+        right: 0rem;
+        bottom: 0.5rem;
+    }
+
+    #faq {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .faqButton {
+        height: 4.5rem;
+        font-size: 1.125rem;
+    }
+
+    .faqPlus {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    #emailSection {
+        height: auto;
+        margin-bottom: 3.5rem;
+    }
+
+    #emailDiv2 {
+        flex-direction: column;
+    }
+
+    #emailWrapper {
+        width: 100%;
+
+    }
+
+    #email2 {
+        width: 100%;
+        height: 3rem;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-top: 1.25rem;
+        padding-right: 1rem;
+        padding-bottom: 0.25rem;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    d #getStarted2 {
+        width: 10.12125rem;
+        height: 3rem;
+        font-size: 1.125rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #arrow2 {
+        right: 1rem;
+        top: 0.75rem;
+    }
+
+    #linkSection {
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width:600px) and (max-width:959px) {
+
+    #nav {
+        height: 5rem;
+        padding: 0 2rem;
+    }
+
+    #logo {
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+    #content {
+        height: 31rem;
+        margin-top: -2rem;
+    }
+
+    #mainh1 {
+        font-size: 2rem;
+        width: 27rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    #mainh2 {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    #mainh3 {
+        width: 27rem;
+    }
+
+    #emailDiv {
+        width: 27rem;
+    }
+
+    #email {
+        width: 243.06px;
+    }
+
+    #getStarted {
+        width: 180.94px;
+        font-size: 1.125rem;
+    }
+
+    #infoSection {
+        margin-top: -2rem;
+        padding: 0 2rem;
+    }
+
+    #trendingSection {
+        margin-bottom: 3.5rem;
+        height: auto;
+    }
+
+    #trendingNow {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    #movieList {
+        margin-top: 0.75rem;
+        width: 100%;
+        height: 10.4rem;
+    }
+
+    #trendingMovies {
+        height: 100%;
+        width: 82.5rem;
+    }
+
+    .movieDiv {
+        width: 8.25rem;
+        height: 100%;
+        padding: 0.3rem 0.625rem;
+    }
+
+    .movie {
+        border-radius: 0.5rem;
+    }
+
+    .number {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1;
+        bottom: 1rem;
+    }
+
+    #featureSection {
+        margin-top: -0.75rem;
+        height: auto;
+        margin-bottom: 3.5rem;
+    }
+
+    #reasonToJoin {
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding-top: 0.75rem;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    .featureDiv {
+        height: 12.0625rem;
+    }
+
+    .featureh2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 1.5rem 1rem 0rem;
+    }
+
+    .featureP {
+        padding: 0.5rem 1rem 0;
+    }
+
+    .featureIcon {
+        height: 4rem;
+        right: 0;
+        bottom: 0.5rem;
+    }
+
+    #faqSection {
+        height: auto;
+        margin-bottom: 3.5rem;
+    }
+
+    #faq {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .faqButton {
+        height: 4.5rem;
+        padding: 1.5rem;
+        font-size: 18px;
+    }
+
+    .faqPlus {
+        height: 1.5rem;
+    }
+
+    #emailSection {
+        margin-bottom: 3.5rem;
+    }
+
+    #getStarted2 {
+        font-size: 1.125rem;
+        width: 11.3125rem;
+    }
+
+    #linkSection {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 3.125rem;
+    }
+}
+
+@media (min-width:960px) and (max-width:1279px) {
+
+    #nav {
+        height: 5rem;
+        padding: 0px 5rem;
+    }
+
+    #content {
+        height: 37rem;
+        margin-top: -2rem;
+    }
+
+    #mainh1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    #mainh2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    #mainh3 {
+        width: 31.75rem;
+    }
+
+    #emailDiv {
+        width: 31.75rem;
+    }
+
+    #email {
+        width: 319.06px;
+    }
+
+    #getStarted {
+        width: 180.94px;
+        font-size: 1.125rem;
+    }
+
+    #infoSection {
+        padding: 0 5rem;
+    }
+
+    #trendingSection {
+        height: auto;
+    }
+
+    #trendingNow {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #movieList {
+        margin-top: 1rem;
+        height: 13.05rem;
+    }
+
+    #trendingMovies {
+        width: 115rem;
+    }
+
+    .movieDiv {
+        padding: 0.4rem 1.375rem;
+        width: 11.5rem;
+    }
+
+    .number {
+        font-size: 5rem;
+        bottom: 1.5rem;
+    }
+
+    #reasonToJoin {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #featureSection {
+        height: auto;
+    }
+
+    #features {
+        flex-wrap: wrap;
+        flex-direction: none;
+        height: auto;
+    }
+
+    .featureDiv {
+        flex: 1 1 calc(50% - 1rem);
+        height: 13.625rem;
+    }
+
+    .featureh2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding-top: 1.5rem;
+    }
+
+    .featureP {
+        padding-top: 0.75rem;
+    }
+
+    #faq {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #linkSection {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+
+
+    #nav {
+        padding: 0 9.25rem;
+        height: 5.5rem;
+    }
+
+    #content {
+        margin-top: -1.25rem;
+    }
+
+    #mainh1 {
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+
+    #emailDiv {
+        width: 36.75rem;
+    }
+
+    #infoSection {
+        padding: 0 9.25rem;
+    }
+
+    #trendingSection {
+        height: 19.625rem;
+    }
+
+    #trendingNow {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .movieDiv {
+        height: 16.75rem;
+        width: 14rem;
+        padding: 0.5rem 1.375rem;
+    }
+
+    .number {
+        font-size: 6.25rem;
+    }
+
+    #featureSection {
+        height: auto;
+    }
+
+    #reasonToJoin {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #faq {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #linkSection {
+        margin-bottom: 3.5rem;
+    }
+}

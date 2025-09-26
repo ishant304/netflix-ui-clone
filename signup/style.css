@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'NetflixSans';
+    src: url("https://occ.a.nflxso.net/genc/hawkins/5.2.0/font/netflix-sans-core-variable-full.woff2") format("woff2");
+    font-weight: 100 700 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NetflixSans';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#headerDiv {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+
+}
+
+#header {
+    width: 66.6667%;
+    height: 5.75rem;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoLink {
+    width: 9.25rem;
+    height: 2.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+#logo {
+    color: rgb(229, 9, 20);
+    fill: rgb(229, 9, 20);
+    width: 100%;
+    height: 100%;
+}
+
+#signIn {
+    background-color: transparent;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 550;
+    border-radius: 3px;
+    height: 2rem;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+#signIn:hover {
+    background-color: rgba(179, 169, 169, 0.377);
+    text-decoration: underline;
+}
+
+#formDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem 6rem;
+}
+
+#formContainer {
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#formTitle {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+#formSubtitle {
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: start;
+}
+
+
+#emailLabel {
+    color: rgb(0, 0, 0);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+#emailName{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+#inputWrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.label{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 0.75rem;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+.float{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+    left: 1rem;
+    line-height: 1.5;
+    right: 1rem;
+    top: 0.5rem;
+    pointer-events: none;
+}
+
+#input {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 1.25rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+}
+
+#input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 0 0 4px #000000;
+}
+
+#invalid{
+    color : rgb(235, 57, 66);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    fill: currentcolor;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    display: none;
+}
+
+#cross{
+    position: absolute;
+    left: 0rem;
+    top: 0px;
+}
+
+#forgot {
+    color: rgb(29, 99, 196);
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 24px;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+#forgot:hover {
+    cursor: pointer;
+    color: rgb(0, 113, 235);
+}
+
+#signUp {
+    width: 100%;
+    height: 3.5rem;
+    background: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: 0.2s;
+}
+
+#signUp:hover {
+    background: #f40612;
+}
+
+#passwordAlert{
+    font-size: 14px;
+    position: relative;
+    margin-left: 1.5rem;
+    color: rgb(235, 57, 66);
+}
+#alert{
+    fill: white;
+    stroke: rgb(235, 57, 66);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: -1.25rem;
+    top: -1px;
+}
+
+#footerDiv {
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(229, 229, 229);
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    width: 66.66%;
+    margin: 4.5rem auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#footerCall{
+    text-align: start;
+    margin-bottom: 0.75rem;
+}
+
+#footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0.75rem 0rem;
+    width: 100%;
+}
+
+
+.Link {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+    font-size: 14px;
+}
+.Link:visited{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#langWrapper {
+    position: relative;
+    margin-top: 14px;
+}
+
+#select2 {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    height: 31px;
+    width: 125px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+#select2 option {
+    color: black;
+}
+
+#lang2 {
+    position: absolute;
+    fill: currentColor;
+    height: 16px;
+    top: 9px;
+    left: 8px;
+    pointer-events: none;
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+    #header {
+        width: 83.333%;
+    }
+
+    #formContainer{
+        width: 27.5rem;
+    }
+
+    #footer {
+        width: 83.333%;
+    }
+}
+
+@media (min-width:960px) and (max-width:1279px) {
+    #header {
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+    #formContainer{
+        width: 27.625rem;
+    }
+
+    #footer {
+        width: 100%;
+        padding: 4.5rem 2rem;
+        padding: 0rem 2rem;
+    }
+}
+
+@media (min-width:600px) and (max-width:959px) {
+    #header {
+        height: 4.75rem;
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+    #formDiv{
+        padding: 2.5rem 2rem 3rem;
+    }
+    #formContainer{
+        width: 33.5rem;
+    }
+
+    #logoLink {
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+    #logo {
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+    #footer {
+        width: 100%;
+        
+        padding: 0rem 2rem;
+        margin: 2rem 0rem;
+    }
+
+    #footerLinks {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 599px) {
+
+        #header {
+        width: 100%;
+        min-height: 4rem;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logoLink,
+    #logo {
+        width: 5rem;
+        height: 1.4rem;
+        max-width: 100%;
+    }
+    #formDiv{
+        padding: 0;
+    }
+    #formContainer{
+        max-width: 375px;
+        width: 100%;
+        height: auto;
+        padding: 2.5rem 1.5rem;
+    }
+    #footer{
+        margin: 2rem 0;
+        padding: 0rem 1.5rem;
+        width: 100%;
+    }
+    #footerLinks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
