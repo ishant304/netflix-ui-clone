@@ -67,7 +67,7 @@ signUp.addEventListener("click",function(dets){
 
         alert("Sign up successfull");
 
-        window.location.href = "/login/"
+        window.location.href = "login/"
     }
 })
 

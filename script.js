@@ -100,7 +100,7 @@ function emailValid(emailValue) {
 
 
 signIn.addEventListener("click", function () {
-    window.location.href = "/login/";
+    window.location.href = "login/";
 });
 
 getStarted.addEventListener("click",function(dets){
@@ -112,7 +112,7 @@ getStarted.addEventListener("click",function(dets){
         const email = input.value;
         sessionStorage.setItem('tempEmail',email);
 
-        window.location.href = "/signup/";
+        window.location.href = "signup/";
     }
     else{
         input.focus();

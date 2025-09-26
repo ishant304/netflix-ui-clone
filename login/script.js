@@ -36,7 +36,7 @@ password.addEventListener("blur", function () {
 });
 
 signUp.addEventListener("click", function () {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 })
 
 email.addEventListener("input", function () {
@@ -80,7 +80,7 @@ signIn.addEventListener("click", function (dets) {
                 password.style.borderColor = "rgb(43, 184, 113)";
                 setTimeout(() => {
                     alert("Sign in successful");
-                    window.location.href = "/index.html";
+                    window.location.href = "homepage/";
                 }, 500);
             } else {
                 invalidPass.style.display = "initial";
