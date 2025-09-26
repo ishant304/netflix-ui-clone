@@ -22,7 +22,7 @@ input.addEventListener("blur", function () {
 });
 
 signIn.addEventListener("click",function(){
-    window.location.href = "/login/";
+    window.location.href = "/netflix-ui-clone/login/";
 })
 
 input.addEventListener("input",function(){
@@ -67,7 +67,7 @@ signUp.addEventListener("click",function(dets){
 
         alert("Sign up successfull");
 
-        window.location.href = "login/"
+        window.location.href = "/netflix-ui-clone/login/"
     }
 })
 

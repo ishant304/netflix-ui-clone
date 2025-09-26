@@ -112,7 +112,7 @@ getStarted.addEventListener("click",function(dets){
         const email = input.value;
         sessionStorage.setItem('tempEmail',email);
 
-        window.location.href = "signup/";
+        window.location.href = "/netflix-ui-clone/signup/";
     }
     else{
         input.focus();
