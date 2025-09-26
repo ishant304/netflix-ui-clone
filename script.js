@@ -100,7 +100,7 @@ function emailValid(emailValue) {
 
 
 signIn.addEventListener("click", function () {
-    window.location.href = "login/";
+    window.location.href = "/netflix-ui-clone/login/";
 });
 
 getStarted.addEventListener("click",function(dets){
